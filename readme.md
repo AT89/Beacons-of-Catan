@@ -3,25 +3,28 @@ WIP.
 This is my 3d printed LED project for Settlers
 ## Design
 
--3d Printing a Settlers of Catan board using Ultimaker 2+ Extended
--3d Printed Chits (roll numbers) to have LED display, wire thise to the base of the tile
--3d Printed player set for Settlements, Cities, Roads (using Warcraft/Starcraft set)
--LED lights at the bases of the Tiles, printed in clear filament
--3x6mm diametric magnets in the Hex bases.
--Accelerometer digital dice
--Robber to de-activate the Digital Chit -> remove any LED lighting trigger
--Still use game paper cards, development cards
--Still would like users to pay attention, alike the real game, if the user does not pay attention and grab their own -resource, they don't get it (so no need to actively keep log)
-
+- 3d Printing a Settlers of Catan board using Ultimaker 2+ Extended
+- 3d Printed Chits (roll numbers) to have LED display, wire thise to the base of the tile
+- 3d Printed player set for Settlements, Cities, Roads (using Warcraft/Starcraft set)
+- LED lights at the bases of the Tiles, printed in clear filament
+- 3x6mm diametric magnets in the Hex bases.
+- Accelerometer digital dice
+- Robber to de-activate the Digital Chit -> remove any LED lighting trigger
+- Still use game paper cards, development cards
+- Still would like users to pay attention, alike the real game, if the user does not pay attention and grab their own - resource, they don't get it (so no need to actively keep log)
+- Fair rolls option
 
 Every tile will have either a beacon transmitter or a beacon receiver, depending how I want to design it..
 A phone app can send the beacon signals to each individual tile to trigger it to light up, after the `dice_roll()` function and `dice_roll_value` is returned. The `Tile_id` with ```chit_value === dice_roll_value``` will trigger the LEDs to light up for a short amount of time.
 
-Schema for tile would be:
+### Schemas
+Dice:
 ```
 dice {
   dice_roll_value = array
 }
+```
+Tiles:
 ```
 tile {
   id: integer,
@@ -37,23 +40,24 @@ chit_value: 8,
 ```
 
 From a beacon perspective it will look like this:
-
+```
 Tile UUID: a7585613-22e5-4203-bdc9-f954e2504083
 {
 minor: 14,
-major: 8
+major: 8,
 }
 ```
 
 ### Game setup:
 User story is:
 Game setup:
-1. - User uses app, generates boards, user will organize the board accordingly
-2. - Once board is set, need to assign every tile the correct number of Chits (store in `chit_value`)
-3. - Players use regular rules to set up the Game (player 1 goes first and last, player 4 goes 4th and 5th etc)
-4. - Game will have an object/hashes to coordinate each tile with a `chit_value`
+- User uses app, generates boards, user will organize the board accordingly
+- Once board is set, need to assign every tile the correct number of Chits (store in `chit_value`) and will display on the MicroLED device. The board will have to match the generated map and this is based on Human not being an idiot.
+- Players use regular rules to set up the Game (player 1 goes first and last, player 4 goes 4th and 5th etc)
+- Game will have an object/hashes to coordinate each tile with a `chit_value`
+- MicroLED module will have to light up according to the `chit_value`
 
-5. Once the board is arranged as per Tile ID,
+-Submodule interpreter for generating the map and transmitting/receiving signal can either live as an apk on the phone or on a Pi. It would be cool to use rn-s.net to generate and broadcast a nearby URL the generated map setup
 
 Game starts:
 1. Player shakes the dice, activates the Accelerometers,
@@ -73,7 +77,7 @@ Game starts:
 -Accelerometers in black dice
 -Deactivator mechanism for the Robber
 
-### Planning
+### Thingiverse file links
 
 Game: https://www.thingiverse.com/thing:2525047
 Case :  https://www.thingiverse.com/make:349648
@@ -97,19 +101,21 @@ Use a Catan-randomizer to order the map accordingly
 
 Filament: Argos 2.75mm or 3mm pla
 
-### Progress:
-PAINTING - Four (4) Fields (Grain Resource) Hexes.
-PAINTING - Four (4) Forest (Lumber Resource) Hexes.
 
-PRINTED - Three (3) Mountains (Ore Resource) Hexes.
+## Progress:
+#### To Paint:
+- Four (4) Fields (Grain Resource) Hexes.
+- Four (4) Forest (Lumber Resource) Hexes.
+- Three (3) Mountains (Ore Resource) Hexes.
+#### To Prime
+- One (1) Desert (No Resource) Hex.
+-
+### Printing queue:
+- Three (3) Hills (Brick Resource) Hexes.
 
-PRINTING - Three (3) Hills (Brick Resource) Hexes.
-
-TODO:
+#### To Print:
 - [] Four (4) Pasture (Wool Resource) Hexes.
 - [] Nine (9) regular sea hexes
 - [] # Harbor Sea hexes
 - [] # 1 of each 2:1 port
 - [] # 3:1 ports
-
-- [x] - One (1) Desert (No Resource) Hex.
