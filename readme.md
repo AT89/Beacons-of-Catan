@@ -17,6 +17,9 @@ This is my 3d printed LED project for Settlers
 Every tile will have either a beacon transmitter or a beacon receiver, depending how I want to design it..
 A phone app can send the beacon signals to each individual tile to trigger it to light up, after the `dice_roll()` function and `dice_roll_value` is returned. The `Tile_id` with ```chit_value === dice_roll_value``` will trigger the LEDs to light up for a short amount of time.
 
+
+`dice_roll_value` will be evaluated in another object/table on the app or a Pi. It will then know which ID to send the LED function to the beacon major to true
+
 ### Schemas
 Dice:
 ```
@@ -27,15 +30,15 @@ dice {
 Tiles:
 ```
 tile {
-  id: integer,
-  chit_value: integer
+  id: integer, unique
+  LED: boolean
 }
 ```
 Example of a tile object:
 ```
 Tile {
 id: 14,
-chit_value: 8,
+LED: false,
 }
 ```
 
@@ -44,7 +47,7 @@ From a beacon perspective it will look like this:
 Tile UUID: a7585613-22e5-4203-bdc9-f954e2504083
 {
 minor: 14,
-major: 8,
+major: false,
 }
 ```
 
