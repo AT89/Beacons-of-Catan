@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    padding-top: 60px;
+    background: #222;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 80vw;
+  padding: 0 10vw 0 10vw;
+  margin: 0 10vw 0 10vw;
+}
+
+
+h1 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+a {
+    color: orange;
+    text-decoration: none;
+}
+a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+p{
+  padding-top:1em;
+}
+#gallery {
+overflow: hidden;
+
+}
+#gallery img{
+  padding-top:5em;
+  max-width:100vw;
+  max-height:100vw;
+  object-fit: fill;
+}
+#modal {
+
+}
