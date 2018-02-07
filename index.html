@@ -5,7 +5,7 @@
   <title>Beacons of Catan</title>
 
   <script src="assets/javascript/jquery-3.3.1.min.js"></script>
-  <!-- <script src="assets/javascript/gallery.js"></script> -->
+  <script src="assets/javascript/gallery.js"></script>
   <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
@@ -17,16 +17,15 @@
         Hello, my name is Anh and I like making cool stuff
       <p>
         I am currently working on a 3D printed Catan set, I plan to rig up the Tiles wirelessly to bluetooth so they can
-        trigger LED lights when the accelerometer dice are rolled. This is a log of my project.
-
+        trigger LED lights when the accelerometer dice are rolled. All tiles will use diametric 3x6mm magnets. This is a log of my project.
+      <p>
         I print with an Ultimaker 2+ Extended
         All pictures are taken with a Pixel 2 XL
 
       <p>
         The Cura files are found <a href="https://www.thingiverse.com/thing:2525047">Here</a>
-        I claim no regret on the beautiful craftsmanship that
+        I claim no fame on the beautiful craftsmanship that
         <a href="https://www.thingiverse.com/Dakanzla/about">Dakanza</a> put together
-
       <p>
         I handpaint the tiles and this is now mostly my painting gallery. I will keep logging this project including the tech, the code that I write, photos wiring/soldering the lights, working the BLEs.
 
@@ -37,15 +36,23 @@
           Here's the <a href="https://github.com/AT89/Beacons-of-Catan">Github</a>
     </div>
 
+    <p class="textbox">
+      First im building a quick image gallery using JS but heres some nice pics as I wait for paint to dry :P
+    <p>
 
     <div class="container">
-            <p>
-              First im building a quick image gallery using JS but heres some nice pics as I wait for paint to dry :P
-            <p>
-              <span class="toggle">Show the pictures!</span>
+
+              <a href="#gallery-start" class="toggle">Show the pictures!</a>
+
+              <!-- <a href="#gallery-latest" class="jump-latest">Jump to the latest!</a> -->
               <div id="gallery" class="hidden">
               <!-- <div id="gallery" class=""> -->
-                <img class="progress-pics"  src="assets/img/pp/Catan-1.jpg" alt="Catan pics"/>
+
+
+
+
+                <img id="gallery-start" class="progress-pics"  src="assets/img/pp/Catan-1.jpg" alt="Catan pics"/>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-2.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-3.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-4.jpg" alt="Catan pics"/>
@@ -73,7 +80,7 @@
                 <img class="progress-pics"  src="assets/img/pp/Catan-26.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-27.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-28.jpg" alt="Catan pics"/>
-                <img class="progress-pics"  src="assets/img/pp/Catan-29.jpg" alt="Catan pics"/>
+                <img id="gallery-latest" class="progress-pics"  src="assets/img/pp/Catan-29.jpg" alt="Catan pics"/>
               </div>
     </div>
 
@@ -82,14 +89,8 @@
 
 
 
-            <div id="modal">
-            </div>
+    <div id="modal">
+    </div>
 
-            <script>
-            $(".toggle").click(function() {
-              $(".container #gallery").toggleClass( "hidden")
-              // alert("butts")
-            });
-            </script>
-          </body>
-          </html>
+  </body>
+</html>
