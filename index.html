@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Beacons of Catan</title>
+
+  <script src="assets/javascript/jquery-3.3.1.min.js"></script>
+  <!-- <script src="assets/javascript/gallery.js"></script> -->
   <link rel="stylesheet" href="assets/styles/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="javascript/gallery.js"></script>
 </head>
 <body>
   <div class="page-container">
 
     <div class="container">
-      <h1>3D print and LED project</h1>
+      <h1>Catan 3D print and LED project</h1>
       <p>Hello, my name is Anh, I like making cool stuff.
         I am currently working on a 3D printed Catan set, I plan to rig up the Tiles wirelessly to bluetooth so they can
         trigger LED lights when the dice are rolled. This is a log of my project.
@@ -34,10 +35,14 @@
           Here's the <a href="https://github.com/AT89/Beacons-of-Catan">Github</a>
     </div>
 
+
     <div class="container">
             <p>
               First im building a quick image gallery using JS but heres some nice pics as I wait for paint to dry :P
-              <div id="gallery">
+            <p>
+              <a href="" class="toggle">Show the pictures!</a>
+              <!-- <div id="gallery" class="hidden"> -->
+              <div id="gallery" class="">
                 <img class="progress-pics"  src="assets/img/pp/Catan-1.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-2.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-3.jpg" alt="Catan pics"/>
@@ -62,7 +67,11 @@
                 <img class="progress-pics"  src="assets/img/pp/Catan-22.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-23.jpg" alt="Catan pics"/>
                 <img class="progress-pics"  src="assets/img/pp/Catan-24.jpg" alt="Catan pics"/>
-
+                <img class="progress-pics"  src="assets/img/pp/Catan-25.jpg" alt="Catan pics"/>
+                <img class="progress-pics"  src="assets/img/pp/Catan-26.jpg" alt="Catan pics"/>
+                <img class="progress-pics"  src="assets/img/pp/Catan-27.jpg" alt="Catan pics"/>
+                <img class="progress-pics"  src="assets/img/pp/Catan-28.jpg" alt="Catan pics"/>
+                <img class="progress-pics"  src="assets/img/pp/Catan-29.jpg" alt="Catan pics"/>
               </div>
     </div>
 
@@ -73,5 +82,11 @@
 
             <div id="modal">
             </div>
+
+            <!-- <script>
+            $(".toggle").on("click", function(){
+              $(".container #gallery").show()
+            });
+            </script> -->
           </body>
           </html>
