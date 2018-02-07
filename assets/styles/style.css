@@ -31,6 +31,12 @@ a:hover {
 p{
   padding-top:1em;
 }
+.textbox {
+
+}
+.center {
+
+}
 #gallery {
 overflow: hidden;
 
@@ -45,6 +51,13 @@ overflow: hidden;
 
 }
 
+.toggle {
+  color: green;
+  color: lightblue;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2em;
+}
 .hidden {
   display:none;
 }
