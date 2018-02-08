@@ -21,7 +21,6 @@
 <body>
 
   <div class="page-container">
-
     <div class="container textbox center">
       <div class="header">
         <h1>Catan, 3D Print, Bluetooth beacons and LED project</h1>
@@ -36,7 +35,7 @@
         It's nice to be away from the computer and just concentrate visually, and just work with some dexterious skill and what might be a lost art. I think this project will take about 3 months, which I can always go back and keep adding layers and detail to the tiles. Painting in layers throughout the project would be cool if I can keep a neat log of all the progression pictures..
       <p>
         I print with an Ultimaker 2+ Extended.
-        All pictures are taken with a Pixel 2 XL
+        All pictures are taken with a Pixel 2 XL. They are mostly untouched, full-resolution 4k pictures.
       <p>
         The Cura files are found <a href="https://www.thingiverse.com/thing:2525047">Here</a>
         I claim no fame on the beautiful craftsmanship that
@@ -57,13 +56,14 @@
     <div class="container gallery-container">
 
               <p>
-                    First, I'm building a quick image gallery using JS and heres some nice pics as I wait for paint to dry :P (will paginate later)</p>
+                  First, I'm building a quick image gallery using JS and heres some nice pics as I wait for paint to dry :P (will paginate later)</p>
               <p>
                 <a href="#gallery-start" class="toggle" id="show-all">Show all the Pictures</a>
-              <div id="gallery" class="hidden">
-              <!-- <div id="gallery"> -->
+              <!-- <div class="gallery hidden" id="gallery-all"> -->
+              <div class="gallery  id="gallery-all">
 
-                <img id="gallery-start" class="progress-pics"  src="assets/img/pp/Catan-1.jpg" alt="Catan pics"/>
+               <img id="gallery-start" class="progress-pics"
+                  src="assets/img/pp/Catan-1.jpg" alt="Catan pics"/>
                 <p>
                   1/23/2018 First print! Guess which tile?
                 </p>
@@ -229,8 +229,8 @@
                 <p>
                   Sheep is done! I will wash and prime it. I plan to paint it with a base coat of light green
                 </p>
-
-                <div id="gallery-latest">
+                </div>
+                <div class="gallery hidden" id="gallery-latest">
                 <img class="progress-pics"  src="assets/img/pp/Catan-31.jpg" alt="Catan pics"/>
                 <p>
                   Starting 5 waters tiles. This blue Filament is amazing. I use Argos 3mm. A roll is $22 on Amazon. To print all these tiles on white.. barely took a good amount of the roll of white filament. Off the top of my head, a roll of filament would probably last for 4 Catan sets.
@@ -243,21 +243,23 @@
       </div>
 
 <div class="block"></div>
+<div class="container textbox">
       <h2> List of things</h3>
-      <p>Game:<br> <a href='https://www.thingiverse.com/thing:2525047'>Style 1</a>
+      <h3>Game:</h3> <a href='https://www.thingiverse.com/thing:2525047'>Style 1</a>
       <p><a href='https://www.thingiverse.com/thing:1750511'>Style 2</a>
 <br><br>
       <p>Case :  <a href='https://www.thingiverse.com/make:349648'>Link</a>
 <br><br>
-      <p>Number tiles: <a href='https://www.thingiverse.com/thing:112018'>Link</a>
+      <p>Number (Chit) tiles: <a href='https://www.thingiverse.com/thing:112018'>Link</a>
 <br><br>
-      <p>Game Pieces:
+      <h3>Game Pieces:</h3>
       <p>Chinese: <a href='https://www.thingiverse.com/thing:1071048'>Link</a>
       <p>Medieval: <a href='https://www.thingiverse.com/thing:1076785'>Link</a>
       <p>Future: <a href='https://www.thingiverse.com/thing:2121534'>Link</a>
 
       <p>STARCRAFT/WARCRAFT: <a href='https://www.thingiverse.com/thing:649313'>Link</a>
 <br><br>
+    <h3>Hardware</h3>
       <p>Microbit (for LED chit display?)<br> <a href='https://www.microbit.co.uk/usercontent/vldhml'>Link</a>
 <br><br>
       <p>LEDs
@@ -265,20 +267,27 @@
       <p><a href='https://www.superbrightleds.com/search/component-leds/5mmhigh%20flux%20led/'>Link</a>
 <br><br>
       <p>BLE Receiver
-      <p><a href='https://www.adafruit.com/product/1697'>Link</a>
+      <p><a href='https://www.adafruit.com/product/1697'>nRF8001</a>
+      <p><a href='https://learn.adafruit.com/getting-started-with-the-nrf8001-bluefruit-le-breakout'>Basic guide</a>
 <br><br>
 <p> stuff for hardware
       <p><a href='https://learn.sparkfun.com/tutorials/pcb-basics'> PCB basics </a>
 <br><br>
-      <p>stuff to check for software
+<h3> Catanerator</h3>
+  <p><a href='https://itunes.apple.com/us/app/catanerator-map-generator/id439248947?mt=8'>iOS </a>
+    <p><a href='https://play.google.com/store/apps/details?id=com.cataneratorlite&hl=en'>Android</a>
+      <h3>stuff to check for software</h3>
+      <p><a href='https://www.adafruit.com/'> Adafruit </a>
       <p><a href='https://idevicesinc.com/sweetblue/'>Link</a>
       <p>Arduino?
       <p><a href='https://www.digit.in/apps/arduino-101-bluetooth-low-energy-32779.html'>Link</a>
+
 <br><br>
-      <p>References:
+      <h3>References</h3>
       <p>Gamepieces count:<br>
         <a href='https://boardgamegeek.com/thread/324667/counts-components-settlers-catan-4th-edition'>Link</a>
     </div>
+  </div>
 
 
 

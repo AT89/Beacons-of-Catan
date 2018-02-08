@@ -86,18 +86,18 @@ a:hover {
 
 /* gallery */
 
-#gallery {
+.gallery {
 overflow: hidden;
 
 }
-#gallery img {
+.gallery img {
   padding: 2em 0 1em 0;
   max-width:100vw;
   max-height:100vw;
   object-fit: fill;
   text-align: center;
 }
-#gallery p, ol {
+.gallery p, ol {
   text-align: left;
   margin: 0 15em 0 15em;
 }
