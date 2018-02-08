@@ -9,8 +9,12 @@ $( document ).ready(function() {
 
   $("#show-latest").click(function() {
     $(".container #gallery-latest").removeClass("hidden")
-    })
+  });
 
-  $('.')   
+  $('.progress-pics').click(function() {
+    var imgSrc = $('.progress-pics').attr('src');
+    console.log(imgSrc)
+    window.location.replace(imgSrc)
+  });
 
   });

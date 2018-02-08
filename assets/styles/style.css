@@ -96,6 +96,10 @@ overflow: hidden;
   max-height:100vw;
   object-fit: fill;
   text-align: center;
+  cursor: pointer;
+}
+.gallery expand {
+
 }
 .gallery p, ol {
   text-align: left;
