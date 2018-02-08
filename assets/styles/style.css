@@ -11,7 +11,12 @@ body {
   list-style-type: none;
   /* font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; */
 }
-
+.nav ul li a{
+  color: orange;
+}
+.nav ul li a:hover {
+  color: lightblue;
+}
 
 
 /* containers */
