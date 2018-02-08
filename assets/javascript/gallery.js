@@ -12,9 +12,8 @@ $( document ).ready(function() {
   });
 
   $('.progress-pics').click(function() {
-    var imgSrc = $('.progress-pics').attr('src');
-    console.log(imgSrc)
-    window.location.replace(imgSrc)
+    var imgSrc = $(this).attr('src');
+    window.open(imgSrc);
   });
 
   });

@@ -107,7 +107,19 @@ overflow: hidden;
 }
 
 #modal {
-
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding: 30px 10px 0px 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: #FFFFFF;
+  z-index: 99;
 }
 
 .toggle {
