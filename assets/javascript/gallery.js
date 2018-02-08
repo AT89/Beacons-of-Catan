@@ -1,7 +1,12 @@
 $( document ).ready(function() {
-  $(".toggle").click(function() {
+
+  $("#show-all").click(function() {
     $(".container #gallery").removeClass("hidden")
-    $(".toggle").addClass("hidden")
+    $("#show-all").addClass("hidden")
     // alert("butts");
   });
-});
+
+  $("#show-latest").click(function() {
+    $(".container #gallery").removeClass("hidden")
+    })
+  });

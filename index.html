@@ -6,15 +6,30 @@
 
   <script src="assets/javascript/jquery-3.3.1.min.js"></script>
   <script src="assets/javascript/gallery.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/style.css">
 </head>
+
+<header>
+  <div class="nav">
+    <ul>
+      <li><a href="#gallery-latest" class="toggle" id="show-latest">Latest 2-7-2018</a>
+    </ul>
+  </div>
+</header>
+
 <body>
+
   <div class="page-container">
 
     <div class="container textbox center">
-      <h1>Catan 3D print and LED project</h1>
+      <div class="header">
+        <h1 >Catan 3D print and LED project</h1>
+      </div>
+
+      <div class="bio">
       <p>
-        Hello, my name is Anh and I like making cool stuff
+        Hello, I am Anh and I like making cool stuff
       <p>
         I am currently working on a 3D printed Catan set, I plan to rig up the Tiles wirelessly to bluetooth so they can
         trigger LED lights when the accelerometer dice are rolled. All tiles will use diametric 3x6mm magnets. This is a log of my project.
@@ -27,70 +42,226 @@
         I claim no fame on the beautiful craftsmanship that
         <a href="https://www.thingiverse.com/Dakanzla/about">Dakanza</a> put together
       <p>
-        I handpaint the tiles and this is now mostly my painting gallery. I will keep logging this project including the tech, the code that I write, photos wiring/soldering the lights, working the BLEs.
-
+        I handpaint the tiles and this is now mostly my painting gallery (for now). I will keep logging this project including the tech, the code that I write, photos wiring/soldering the lights, working the BLEs.
       <p>
         My work is focused on Bluetooth Low Energy beacon solutions; so I can get the firmware/technology to do this little project. (including building the dice)
-
-        <p>
-          Here's the <a href="https://github.com/AT89/Beacons-of-Catan">Github</a>
+      <p>
+        Here's the <a href="https://github.com/AT89/Beacons-of-Catan">Github</a>
     </div>
+  </div>
 
-    <p class="textbox">
-      First im building a quick image gallery using JS but heres some nice pics as I wait for paint to dry :P
-    <p>
+      <p class="textbox">
+        First im building a quick image gallery using JS but heres some nice pics as I wait for paint to dry :P
+      <p>
 
-    <div class="container">
+    <div class="container gallery-container">
 
-              <a href="#gallery-start" class="toggle">Show the pictures!</a>
-
-              <!-- <a href="#gallery-latest" class="jump-latest">Jump to the latest!</a> -->
+              <p>
+                <a href="#gallery-start" class="toggle" id="show-all">Show all the Pictures</a>
               <div id="gallery" class="hidden">
-              <!-- <div id="gallery" class=""> -->
-
-
-
+              <!-- <div id="gallery"> -->
 
                 <img id="gallery-start" class="progress-pics"  src="assets/img/pp/Catan-1.jpg" alt="Catan pics"/>
+                <p>
+                  1/23/2018 First print! Guess which tile?
+                </p>
 
                 <img class="progress-pics"  src="assets/img/pp/Catan-2.jpg" alt="Catan pics"/>
+                <p>
+                  Still printing..
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-3.jpg" alt="Catan pics"/>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-4.jpg" alt="Catan pics"/>
+                <p>
+                  Its like 2 rax barracks pumping out 4 Marines
+                </p>
+                <img class="progress-pics"  src="assets/img/pp/Catan-4a.jpg" alt="Catan pics"/>
+                <p>
+                  Look at the detail on the desert, the grooves/lines creating texture. The cactuses look so great too!
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-5.jpg" alt="Catan pics"/>
+                <p>
+                  Base coat was done. I did not have "desert" color paint so I just used a mix of Metallic Red and Brown
+                </p>
+                <p>
+                  Top Coat Matte will help dull out the colors so it does not look metallic
+                </p>
+                <p>
+                  I plan to top coat everything all-together
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-6.jpg" alt="Catan pics"/>
+                <p>
+                  I applied weathering here using the Tamiya Weathering kits.
+                  I think the weathering kits are awesome, really brings out the detail for all the grooves and lines in your model
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-7.jpg" alt="Catan pics"/>
+                <p>
+                  Primed and ready!
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-8.jpg" alt="Catan pics"/>
+                <p>
+                  I was super excited about the details at the barn and the Sheep/Wheat at in-front of the barn</p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-9.jpg" alt="Catan pics"/>
+                <p>
+                  Look at the detail on the Wheat fields!
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-10.jpg" alt="Catan pics"/>
+                <p>
+                  Here's Lumber printing, you can see the stringy artifacts.</p>
+                <p>
+                  I plucked out these artifacts
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-11.jpg" alt="Catan pics"/>
+                <p>
+                  Growing trees
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-12.jpg" alt="Catan pics"/>
+                <p>Fast forward... these were my steps</p>
+                <ol>
+                  <li>Remove artifacts using a X-acto Knife and Tweezers
+                  <li>Wash in soap and water, 5% 95% respectively
+                  <li>Prime with White and let it dry for a day. Priming helps the plastic adhere to the paint.
+                  <li>Paint with a base coat of <span style="color:green;">Green</span>
+                  <li>Paint the tree trunks and stumps <span style="color:brown;">Brown</span>
+                  <li>Paint the rocks <span style="color:grey">Grey</span>
+                </ol>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-13.jpg" alt="Catan pics"/>
+                <p>
+                  I applied a layer of lighter Green (Mixed Military green with white). I will go over this with the green to give it some texture
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-14.jpg" alt="Catan pics"/>
+                <p>
+                  The Wheat tiles were a bit tricky, and funny. I started painting the base coat of these tiles as Brown but later I decided to do Light green.
+                  Then I really couldn't recall what What fields look like so I went to Google. After some thought, I wanted to keep the real color of the
+                  similar to what the cards are. So I mixed some Brown and Yellow to get this darker yellow. Then I painted the wheat tops with yellow. It actually turned out pretty well because it gives the house a nice mini lawn and some grass growing around the trees. I later added on rocks and details to the houses and piles of wheat. Then I added some wheathering to get some detail on the "rise" or sides of the wheat fields.
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-15.jpg" alt="Catan pics"/>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-16.jpg" alt="Catan pics"/>
+                <p>
+                  This was before I went back and layered green on the lumber
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-17.jpg" alt="Catan pics"/>
+                <p>
+                  I applied a base coat of <span style="color:grey;">Grey</span>. Painted the trunks <span style="color:brown;">Brown</span>.Then painted the trees <span style="color:green;">Green</span>.
+                  I added a paint mask to the little cart so I could paint the wooden stumps supports.
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-18.jpg" alt="Catan pics"/>
+                <p>
+                  Ta da!
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-19.jpg" alt="Catan pics"/>
+                <p>
+                  I added some detail to the cart
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-20.jpg" alt="Catan pics"/>
+                <p>
+                  "Three's a party!" -Tommy Wiseau
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-21.jpg" alt="Catan pics"/>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-22.jpg" alt="Catan pics"/>
+                <p> The white didnt turn out so well, I think it was because there was another layer of paint below it and the brush itself was not great at painting and was better at detailing. I went over it a few more times later. Added some unique details to every house and silo top. I didn't want to add too much detail to distract players
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-23.jpg" alt="Catan pics"/>
+                <p>
+                  I definitely went over the rocks later
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-24.jpg" alt="Catan pics"/>
+                <p>
+                  can u imagine?
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-25.jpg" alt="Catan pics"/>
+                <p>
+                  Here is the Wheat tile, some extensive detail work here. (the rock was redone later..)
+                  Used the Tamiya Weathering kit to add some Mud weathering to the high rises of the Wheat
+                </p>
+                <p>
+                  I used the gunk oil wash technique on the Ore mountains. I actually kind of liked it when the mountains were black so I rubbed the oil out and then applied it again to get some texture.
+                </p>
+                <p>
+                  Added Gun-metal weathering to make it sparkly.
+                  A good guide on gunk-oil wash is <a href="https://www.youtube.com/watch?v=Avj5mkLrrVY" target="_blank">Here</a> This is really how Star Wars and other Sci-Fi movies quickly make set props for space battles. Quick steps below:
+                  <ol>
+                    <li>Plop some oil paint on some magazine paper. The plastic finish on magazine paper helps dry it out and get some of the sesame oil out. I let it sit like this for 24hrs
+                    <li>You apply oil paint with a brush (that you don't care about), dry brushing is the best for this
+                    <li>Wipe area down using a microfiber cloth, use your fingers to gently rub some oil off. Apply more pressure/rubbing runs to get more oil out. It's really easy to re-apply since Oil takes a week to dry
+                    <li>Wait a week and then Top Coat to seal it in
+                  </ol>
+                <p>
+                  You can see my Gunk Oil wash finish on the
+                  <a href="assets/img/misc/RX-78-2.jpg">RX-78-2</a>
+                </p>
+
                 <img class="progress-pics"  src="assets/img/pp/Catan-26.jpg" alt="Catan pics"/>
+                <p>
+                  Added some color to the cart, you can see the Oil paint effecting the wood, it looks great. I also splashed some oil paint on the trees and cleared it off to give it some coloring/shading as well
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-27.jpg" alt="Catan pics"/>
+                <p>
+                  I probably want to fix the weathering on the Wheat. at least on the top portions. I probably need to go over it again or wipe it down take off the weathering.
+                </p>
                 <img class="progress-pics"  src="assets/img/pp/Catan-28.jpg" alt="Catan pics"/>
-                <img id="gallery-latest" class="progress-pics"  src="assets/img/pp/Catan-29.jpg" alt="Catan pics"/>
+
+                <img class="progress-pics"  src="assets/img/pp/Catan-29.jpg" alt="Catan pics"/>
+                <p>
+                  Brick tile after it has been cleaned and washed
+                </p>
+
+                <img class="progress-pics"  src="assets/img/pp/Catan-30.jpg" alt="Catan pics"/>
+                <p>
+                  Sheep is done! I will wash and prime it. I plan to paint it with a base coat of light green
+                </p>
+
+                <div id="gallery-latest">
+                <img class="progress-pics"  src="assets/img/pp/Catan-31.jpg" alt="Catan pics"/>
+                <p>
+                  Starting 5 waters tiles. This blue Filament is amazing. I use Argos 3mm. A roll is $22 on Amazon. To print all these tiles on white.. barely took a good amount of the roll of white filament. Off the top of my head, a roll of filament would probably last for 4 Catan sets.
+                </p>
               </div>
+
+      </div>
     </div>
 
 
-
+    <section class="contact">
+      <div class="content">
+        <ul class="socials">
+          <li class="social">
+            <a href="mailto:greetings@anhtice.com" target="_top" target="_blank" class="email">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="http://www.github.com/at89" target="_blank" class="github">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="social">
+            <a href="https://www.linkedin.com/in/anhtruong89" target="_blank" class="linkedin">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
 
 
     <div id="modal">
     </div>
+  </div>
 
   </body>
 </html>
