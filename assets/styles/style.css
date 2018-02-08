@@ -10,11 +10,14 @@ body {
 .nav ul li {
   list-style-type: none;
   /* font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; */
+  display: inline-block;
 }
 .nav ul li a{
   font-size: 1em;
   color: orange;
+  padding-left: 10px;
 }
+
 .nav ul li a:hover {
   color: lightblue;
 }
