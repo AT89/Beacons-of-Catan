@@ -97,9 +97,9 @@ overflow: hidden;
 
 }
 .gallery img {
-  padding: 2em 0 1em 0;
-  max-width:100vw;
-  max-height:100vw;
+  padding: 1em 0 1em 0;
+  max-width:90vw;
+
   object-fit: fill;
   text-align: center;
   cursor: pointer;
