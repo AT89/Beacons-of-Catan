@@ -1,6 +1,11 @@
 # Beacons of Catan
 WIP.
 This is my 3d printed LED project for Settlers
+view the complete log here: [Website log](https://at89.github.io/Beacons-of-Catan/index.html)
+
+updated schematic of Hex Tile guts:
+![tile schematic](assets/img/tile-layout.jpg)
+
 ## Design
 
 - 3d Printing a Settlers of Catan board using Ultimaker 2+ Extended
